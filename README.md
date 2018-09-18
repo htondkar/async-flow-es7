@@ -42,6 +42,20 @@ async function fileInParallelIterateASAP(promises, callback) {
   }
 }
 ```
+Or:
+```
+
+```
+async function loopAsync(listOfPromises, cb) {
+  for (const promise of listOfPromises) {
+    const result = await promise
+    cb(result)
+  }
+}
+
+```
+
+```
 
 With the help of async functions and async iterator loop, we can acheive this easily
 
