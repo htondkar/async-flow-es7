@@ -1,4 +1,4 @@
-# async flow controll in modern JavaScript
+# Async flow controll in modern JavaScript
 
 #### A collection of async flow control patterns 
 ---
