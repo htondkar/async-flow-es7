@@ -42,8 +42,9 @@ async function fileInParallelIterateASAP(promises, callback) {
   }
 }
 ```
+
 Or:
-```
+
 
 ```
 async function loopAsync(listOfPromises, cb) {
@@ -52,8 +53,6 @@ async function loopAsync(listOfPromises, cb) {
     cb(result)
   }
 }
-
-```
 
 ```
 
