@@ -1,8 +1,9 @@
-# async-flow-es7
-A collection of async flow control patterns 
+# async flow controll in modern JavaScript
+
+#### A collection of async flow control patterns 
 ---
 
-### Wait of a list of promises
+### Wait for a list of promises
 Say, you have an array of promises and you want to make sure the order of them is kept as is, regardless of their resolve order.
 
 ```
@@ -34,11 +35,13 @@ This way of thinking although sometimes usefull, but in general contradicts the 
 This is a very common use case. you have a bunch of promises you want to run them concurrently but you dont need the result of them
 all at the same time. you want the values to arrive over time, but you also want them in order.
 
+```
 async function fileInParallelIterateASAP(promises, callback) {
   for await (const value of promises) {
     callback(value)
   }
 }
+```
 
 With the help of async functions and async iterator loop, we can acheive this easily
 
